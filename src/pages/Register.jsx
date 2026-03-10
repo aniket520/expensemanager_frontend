@@ -82,6 +82,13 @@ const handleSubmit = async (e) => {
             Register
           </button>
         </form>
+
+        <p style={styles.loginText}>
+  Already have an account?{" "}
+  <span style={styles.loginLink} onClick={() => navigate("/login")}>
+    Login
+  </span>
+</p>
       </div>
     </div>
   );
@@ -127,6 +134,18 @@ const styles = {
     fontSize: "16px",
     cursor: "pointer",
   },
+
+  loginText: {
+  textAlign: "center",
+  marginTop: "15px",
+  fontSize: "14px"
+},
+
+loginLink: {
+  color: "#4f46e5",
+  cursor: "pointer",
+  fontWeight: "bold"
+}
 };
 
 export default Register;
